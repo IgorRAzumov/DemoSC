@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DemoSC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">title</string>
+    <string name="addcart">addcart</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+</resources>
