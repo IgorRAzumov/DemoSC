@@ -22,8 +22,7 @@ class TitleFragment : Fragment() {
         savedInstanceState: Bundle?): View? {
        val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,R.layout.fragment_title,container,false)
 
-       binding.recyclerView.layoutManager= LinearLayoutManager(this.context)
-        
+
 
         return binding.root
     }

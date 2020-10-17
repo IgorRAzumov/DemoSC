@@ -7,7 +7,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class MyViewModel : ViewModel() {
     
-   // var product: MutableLiveData<MutableList<Product>> = MutableLiveData()
+    var product: MutableLiveData<MutableList<Product>> = MutableLiveData()
 
     private val firebaseFirestore: FirebaseFirestore = FirebaseFirestore.getInstance()
 

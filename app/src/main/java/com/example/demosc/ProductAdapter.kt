@@ -2,21 +2,18 @@ package com.example.demosc
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.demosc.databinding.ItemMyBinding
-
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_my.view.*
 
-class ProductAdapter(
-    private val context: Context
+class ProductAdapter(private val context: Context ,
 ) :
     RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
 
 
-     var data = mutableListOf<Product>()
+    var data = mutableListOf<Product>()
         set(value) {
             field = value
             notifyDataSetChanged()
@@ -34,7 +31,8 @@ class ProductAdapter(
         return data.size
     }
 
-    class MyViewHolder private constructor(private val binding: ItemMyBinding) : RecyclerView.ViewHolder(binding.root) {
+    class MyViewHolder private constructor(private val binding: ItemMyBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun bindProduct(products: Product) {
             val res = itemView.context.resources
