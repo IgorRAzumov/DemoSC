@@ -8,7 +8,7 @@ import com.example.demosc.databinding.ItemMyBinding
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_my.view.*
 
-class ProductAdapter(private val context: Context ,
+class ProductAdapter(
 ) :
     RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
 
